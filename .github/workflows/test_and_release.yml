@@ -40,6 +40,6 @@ jobs:
           tag_name: ${{ github.ref }}
           release_name: v${{ github.ref }}
           body: |
-            v${{ github.ref }} released🎉
+            v${{ github.event.release.tag_name }} released🎉
           draft: false
           prerelease: false
